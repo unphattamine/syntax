@@ -1,3 +1,8 @@
+# SQL connector to personal MySQL DB
+# to demonstrate functionality of Llama-index
+# with connection towards OpenAI API
+# Stefan Olsavsky - 17.7.2024
+
 import os
 import time
 import openai
