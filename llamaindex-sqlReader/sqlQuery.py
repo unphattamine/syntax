@@ -15,9 +15,9 @@ from sqlalchemy import create_engine, inspect
 # Get environment variables
 openai.api_key = os.environ.get('OPENAI_API_KEY')
 db_password = os.environ.get('DB_PASS')
+db_user = os.environ.get('DB_USER')
 
 # Initiate MySQL variables and connection URI
-db_user = "solsavsky"
 db_host = "mysql80.r1.websupport.sk"
 db_name = "llama_test"
 db_port = "3314"
@@ -58,6 +58,7 @@ def chat_to_sql(question: str | list[str], tables: list[str] | None = None, synt
     print(Fore.BLUE + "SQL Query I ran:", sql)
     if duration is not None:
         print(Fore.WHITE + f"Query took me: {duration:.2f} seconds")
+
 
 #Define query against DB
 
