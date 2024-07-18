@@ -2,6 +2,7 @@
 # to demonstrate functionality of Llama-index
 # with connection towards OpenAI API
 # Stefan Olsavsky - 17.7.2024
+# v_0.1
 
 import os
 import time
